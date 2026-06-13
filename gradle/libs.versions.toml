@@ -28,7 +28,7 @@ material = { group = "com.google.android.material", name = "material", version.r
 androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
 androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
 retrofit = { group="com.squareup.retrofit3", name="retrofit", version.ref="retrofit"}
-okhttp = { group ="com.square.okhttp3", name="logging-interception", version.ref="okhttp"}
+okhttp = { group ="com.squareup.okhttp3", name="logging-interceptor", version.ref="okhttp"}
 gson = { group="com.squareup.retrofit2", name="converter-gson", version.ref="gson"}
 androidx-lifecycle-viewmodel-android = {group="androidx.lifecycle", name="lifecycler-viewmodel-android", version.ref="lifecycleViewmodelAndroid"}
 glide ={ group="com.github.buptech.glide", name="glide", version.ref="glide"}
