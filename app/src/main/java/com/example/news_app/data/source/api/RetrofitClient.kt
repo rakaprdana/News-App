@@ -13,7 +13,7 @@ object RetrofitClient {
             level= HttpLoggingInterceptor.Level.BODY
         })
         .build()
-    private val retrofit = Retrofit.Builder()
+    val retrofit = Retrofit.Builder()
         .baseUrl(BASE_URL)
         .client(okhttpClient)
         .addConverterFactory(GsonConverterFactory.create())

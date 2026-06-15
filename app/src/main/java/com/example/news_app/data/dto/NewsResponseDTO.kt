@@ -1,7 +1,7 @@
 package com.example.news_app.data.dto
 
 import com.google.gson.annotations.SerializedName
-
+// Mendapatkan data dari response API
 data class NewsResponseDTO(
     @SerializedName("status")
     val status: String,

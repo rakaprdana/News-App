@@ -15,8 +15,8 @@ gson = "2.9.0"
 lifecycleViewmodelAndroid = "2.8.5"
 glide = "4.15.1"
 glidecompiler = "4.15.1"
-navigationFragmentKtx = "2.8.0"
-navigationUiKtx = "2.8.0"
+navigationFragmentKtx = "2.9.8"
+navigationUiKtx = "2.9.8"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -31,7 +31,7 @@ retrofit = { group="com.squareup.retrofit3", name="retrofit", version.ref="retro
 okhttp = { group ="com.squareup.okhttp3", name="logging-interceptor", version.ref="okhttp"}
 gson = { group="com.squareup.retrofit2", name="converter-gson", version.ref="gson"}
 androidx-lifecycle-viewmodel-android = {group="androidx.lifecycle", name="lifecycler-viewmodel-android", version.ref="lifecycleViewmodelAndroid"}
-glide ={ group="com.github.buptech.glide", name="glide", version.ref="glide"}
+glide ={ group="com.github.bumptech.glide", name="glide", version.ref="glide"}
 glide-compiler = { group= "com.github.bumptech.glide", name="compiler", version.ref="glidecompiler"}
 androidx-navigation-fragment-ktx ={group="androidx.navigation", name="navigation-fragment-ktx", version.ref="navigationFragmentKtx"}
 androidx-navigation-ui-ktx = {group="androidx.navigation", name="navigation-ui-ktx", version.ref="navigationUiKtx"}
