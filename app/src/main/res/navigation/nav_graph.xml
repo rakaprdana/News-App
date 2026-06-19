@@ -8,5 +8,18 @@
         android:id="@+id/homeFragment"
         android:name="com.example.news_app.presentation.home.HomeFragment"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+        <argument
+            android:name="Article"
+            app:argType="com.example.news_app.domain.entities.Article"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.example.news_app.presentation.detail.DetailFragment"
+        android:label="fragment_detail"
+        tools:layout="@layout/fragment_detail" />
 </navigation>
