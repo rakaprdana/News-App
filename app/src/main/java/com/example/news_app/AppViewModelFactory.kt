@@ -15,6 +15,6 @@ class AppViewModelFactory: ViewModelProvider.Factory {
             modelClass.isAssignableFrom(it.key)
         }?.value?: throw IllegalArgumentException("Unknown Model Class")
 
-        @Suppress("UNCHECKED_CAST") return creator as T
+        @Suppress("UNCHECKED_CAST") return creator() as T
     }
 }

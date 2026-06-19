@@ -14,7 +14,7 @@ okhttp = "4.10.0"
 gson = "2.9.0"
 lifecycleViewmodelAndroid = "2.8.5"
 glide = "4.15.1"
-glidecompiler = "4.15.1"
+#glidecompiler = "4.15.1"
 navigationFragmentKtx = "2.9.8"
 navigationUiKtx = "2.9.8"
 
@@ -27,17 +27,16 @@ androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
 androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
-retrofit = { group="com.squareup.retrofit3", name="retrofit", version.ref="retrofit"}
+retrofit = { group="com.squareup.retrofit2", name="retrofit", version.ref="retrofit"}
 okhttp = { group ="com.squareup.okhttp3", name="logging-interceptor", version.ref="okhttp"}
 gson = { group="com.squareup.retrofit2", name="converter-gson", version.ref="gson"}
-androidx-lifecycle-viewmodel-android = {group="androidx.lifecycle", name="lifecycler-viewmodel-android", version.ref="lifecycleViewmodelAndroid"}
+androidx-lifecycle-viewmodel-android = {group="androidx.lifecycle", name="lifecycle-viewmodel-android", version.ref="lifecycleViewmodelAndroid"}
 glide ={ group="com.github.bumptech.glide", name="glide", version.ref="glide"}
-glide-compiler = { group= "com.github.bumptech.glide", name="compiler", version.ref="glidecompiler"}
+#glide-compiler = { group= "com.github.bumptech.glide", name="compiler", version.ref="glidecompiler"}
 androidx-navigation-fragment-ktx ={group="androidx.navigation", name="navigation-fragment-ktx", version.ref="navigationFragmentKtx"}
 androidx-navigation-ui-ktx = {group="androidx.navigation", name="navigation-ui-ktx", version.ref="navigationUiKtx"}
-
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
-
+kotlin-parcelize = { id = "org.jetbrains.kotlin.plugin.parcelize", version.ref = "kotlin" }

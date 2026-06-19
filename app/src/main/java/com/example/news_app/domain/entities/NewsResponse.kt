@@ -24,6 +24,6 @@ data class Article(
 
 @Parcelize
 data class Source(
-    val id: Int?,
+    val id: String?,
     val name: String
 ): Parcelable

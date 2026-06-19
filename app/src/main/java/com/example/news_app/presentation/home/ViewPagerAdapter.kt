@@ -2,6 +2,7 @@ package com.example.news_app.presentation.home
 
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.adapter.FragmentStateAdapter
+import com.example.news_app.presentation.list.ListFragment
 
 class ViewPagerAdapter(fragment: Fragment) : FragmentStateAdapter(fragment) {
     val categoryList =
@@ -12,7 +13,7 @@ class ViewPagerAdapter(fragment: Fragment) : FragmentStateAdapter(fragment) {
     }
 
     override fun createFragment(position: Int): Fragment {
-        TODO("Not yet implemented")
+        return ListFragment.newInstance(category = categoryList[position])
     }
 
 }

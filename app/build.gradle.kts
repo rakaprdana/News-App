@@ -1,3 +1,5 @@
+import java.util.Properties
+
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
@@ -16,6 +18,15 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        //Setup API KEY SECURITY
+        //load the values from .properties file
+//        val keystoreFile = project.rootProject.file("apikey.properties")
+//        val properties = Properties()
+//        properties.load(keystoreFile.inputStream())
+//
+//        //return empty key in case something goes wrong
+//        val apiKey = properties.getProperty("API_KEY") ?: ""
+//        buildConfigField("String", "API_KEY", "\"155c93d449764055bf9f26304482b952\"")
     }
 
     buildTypes {
@@ -34,6 +45,9 @@ android {
     kotlinOptions {
         jvmTarget = "11"
     }
+    buildFeatures{
+        buildConfig = true
+    }
 }
 
 dependencies {
@@ -49,7 +63,7 @@ dependencies {
     implementation(libs.gson)
 
     implementation(libs.glide)
-    implementation(libs.glide.compiler)
+//    implementation(libs.glide.compiler)
 
     implementation(libs.androidx.lifecycle.viewmodel.android)
     implementation(libs.androidx.navigation.fragment.ktx)

@@ -6,6 +6,7 @@ import com.example.news_app.data.source.api.NewsServices
 import com.example.news_app.data.source.api.RetrofitClient
 import com.example.news_app.domain.repository.NewsRepository
 import com.example.news_app.domain.usecase.GetTopHeadlinesUseCase
+import com.example.news_app.presentation.list.NewsListViewModel
 
 class AppContainer {
     private val retrofit = RetrofitClient.retrofit
@@ -22,10 +23,21 @@ class AppContainer {
         GetTopHeadlinesUseCase(newsRepository)
     }
 
-    fun provideViewModelFactor(): AppViewModelFactory{
-        return AppViewModelFactory().apply {
-            //Register View Model in Here
+//    fun provideViewModelFactor(): AppViewModelFactory {
+//        return AppViewModelFactory().apply {
+//            registerCreator(NewsListViewModel::class.java) {
+//                NewsListViewModel(
+//                    getTopHeadlinesUseCase
+//                )
+//            }
+//        }
+
+    val viewModelFactory: AppViewModelFactory by lazy {
+        AppViewModelFactory().apply {
+            registerCreator(NewsListViewModel::class.java){
+                NewsListViewModel(getTopHeadlinesUseCase)
         }
+    }
     }
 
 }
